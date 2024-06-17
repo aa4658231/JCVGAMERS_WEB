@@ -1,0 +1,2 @@
+# JCVGAMERS_WEB
+JC V GAMERS專用靜態網站
