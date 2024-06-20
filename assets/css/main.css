@@ -3011,6 +3011,16 @@ input, select, textarea {
 				width: 16em;
 			}
 
+		.spotlight .image2 {
+			display: inline-block;
+			margin-left: 4em;
+			padding: 0.65em;
+		}
+			.spotlight .image2 img {
+				display: block;
+				width: 22em;
+			}
+
 		@media screen and (max-width: 980px) {
 
 			.spotlight {
