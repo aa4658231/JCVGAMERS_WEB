@@ -2413,6 +2413,15 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+		.image.character {
+			display: block;
+			margin: 0 0 3em 0;
+			width: 100%;
+			text-align: center;
+		}
+			.image.character img {
+				width: 100%;
+			}
 
 /* List */
 
@@ -2427,9 +2436,9 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
+		/* list-style: disc; */
 		margin: 0 0 2em 0;
-		padding-left: 1em;
+		/* padding-left: 1em; */
 	}
 
 		ul li {
@@ -2879,7 +2888,7 @@ input, select, textarea {
 			-ms-flex: 1;
 			flex: 1;
 			padding: 1.5em;
-			color: #ffffff;
+			/* color: #ffffff; */
 			text-align: center;
 		}
 
@@ -3018,7 +3027,8 @@ input, select, textarea {
 		}
 			.spotlight .image2 img {
 				display: block;
-				width: 22em;
+				max-width: 22em;
+				width: auto;
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3793,3 +3803,18 @@ input, select, textarea {
 			}
 
 		}
+/* youtube rwd */
+	.youtube-rwd {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: 56.25%;
+	}
+		
+	.youtube-rwd iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
