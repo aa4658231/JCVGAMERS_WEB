@@ -2912,6 +2912,13 @@ input, select, textarea {
 				background-color: #8cc9f0;
 			}
 
+			.statistics li.team-partner{
+				text-align: left;
+			}
+				.statistics li.team-partner h2{
+					text-align: center;
+				}
+
 			.statistics li strong, .statistics li b {
 				display: block;
 				font-size: 2em;
