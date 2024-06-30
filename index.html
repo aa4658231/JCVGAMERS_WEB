@@ -27,7 +27,7 @@
 
 				<!-- Nav -->
 					<nav id="nav">
-						<ul>
+						<ul class="tab-title">
 							<li><a href="#intro" class="active">進行中賽事</a></li>
 							<li><a href="#first">過往賽事</a></li>
 							<li><a href="#second">合作主播</a></li>
@@ -39,7 +39,7 @@
 					<div id="main">
 
 						<!-- Introduction -->
-							<section id="intro" class="main special">
+							<section id="intro" class="main special tab-inner">
 								<header class="major">
 									<h2>進行中賽事</h2>
 								</header>
@@ -56,7 +56,7 @@
 							</section>
 
 						<!-- First Section -->
-							<section id="first" class="main special">
+							<section id="first" class="main special tab-inner">
 								<header class="major">
 									<h2>過往賽事</h2>
 								</header>
@@ -159,7 +159,7 @@
 							</section>
 
 						<!-- Second Section -->
-							<section id="second" class="main special">
+							<section id="second" class="main special tab-inner">
 								<header class="major">
 									<h2>合作主播</h2>
 <!-- 									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
@@ -275,7 +275,7 @@
 							</section>
 
 						<!-- Get Started -->
-							<section id="cta" class="main special">
+							<section id="cta" class="main special tab-inner">
 								<header class="major">
 									<h2>團隊夥伴</h2>								
 								</header>
@@ -383,6 +383,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				$(function(){
+    				var $li = $('ul.tab-title li');
+        				$($li. eq(0) .addClass('active').find('a').attr('href')).siblings('.tab-inner').hide();
+    
+				        $li.click(function(){
+            				$($(this).find('a'). attr ('href')).show().siblings ('.tab-inner').hide();
+            				$(this).addClass('active'). siblings ('.active').removeClass('active');
+        				});
+    				});
+			</script>
 
 	</body>
 </html>
